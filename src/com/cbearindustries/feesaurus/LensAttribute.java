@@ -1,6 +1,6 @@
 package com.cbearindustries.feesaurus;
 
-public class lensAttribute {
+public class LensAttribute {
     private String id;
     private String description;
     private double ptResponsibility_SV;

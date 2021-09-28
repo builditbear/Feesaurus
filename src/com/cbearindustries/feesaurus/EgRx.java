@@ -1,6 +1,6 @@
 package com.cbearindustries.feesaurus;
 
-public class egRx {
+public class EgRx {
     private double rightSphere;
     private double rightCylinder;
     private double rightAxis;
@@ -13,7 +13,7 @@ public class egRx {
 
     private double addPower;
 
-    public egRx(double rightSphere, double rightCylinder, double rightAxis, double rightPrism,
+    public EgRx(double rightSphere, double rightCylinder, double rightAxis, double rightPrism,
                 double leftSphere, double leftCylinder, double leftAxis, double leftPrism, double addPower) {
         this.rightSphere = rightSphere;
         this.rightCylinder = rightCylinder;
@@ -28,7 +28,7 @@ public class egRx {
         this.addPower = addPower;
     }
 
-    public void print(egRxPrinter printer, boolean printInPlus){
+    public void print(EgRxPrinter printer, boolean printInPlus){
         if(printInPlus){
             printer.printPlusCylinder(this);
         }else{

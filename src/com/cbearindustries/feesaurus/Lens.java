@@ -3,18 +3,18 @@ package com.cbearindustries.feesaurus;
 import java.util.ArrayList;
 
 public class Lens {
-    private egRx prescription;
-    private lensAttribute type;
-    private lensAttribute material;
-    private lensAttribute coating;
-    private ArrayList<lensAttribute> tint;
-    private ArrayList<lensAttribute> miscAttributes;
+    private EgRx prescription;
+    private LensAttribute type;
+    private LensAttribute material;
+    private LensAttribute coating;
+    private ArrayList<LensAttribute> tint;
+    private ArrayList<LensAttribute> miscAttributes;
     // Fewer attributes are available for glass lenses, and they are generally more expensive, though they share
     // the same codes and qualities otherwise.
     private boolean isGlass;
 
-    public Lens(egRx prescription, lensAttribute type, lensAttribute material, lensAttribute coating,
-                lensAttribute tint, ArrayList<lensAttribute> miscAttributes) {
+    public Lens(EgRx prescription, LensAttribute type, LensAttribute material, LensAttribute coating,
+                ArrayList<LensAttribute> tint, ArrayList<LensAttribute> miscAttributes) {
         this.prescription = prescription;
         this.type = type;
         this.material = material;
@@ -23,51 +23,51 @@ public class Lens {
         this.miscAttributes = miscAttributes;
     }
 
-    public egRx getPrescription() {
+    public EgRx getPrescription() {
         return prescription;
     }
 
-    public void setPrescription(egRx prescription) {
+    public void setPrescription(EgRx prescription) {
         this.prescription = prescription;
     }
 
-    public lensAttribute getType() {
+    public LensAttribute getType() {
         return type;
     }
 
-    public void setType(lensAttribute type) {
+    public void setType(LensAttribute type) {
         this.type = type;
     }
 
-    public lensAttribute getMaterial() {
+    public LensAttribute getMaterial() {
         return material;
     }
 
-    public void setMaterial(lensAttribute material) {
+    public void setMaterial(LensAttribute material) {
         this.material = material;
     }
 
-    public lensAttribute getCoating() {
+    public LensAttribute getCoating() {
         return coating;
     }
 
-    public void setCoating(lensAttribute coating) {
+    public void setCoating(LensAttribute coating) {
         this.coating = coating;
     }
 
-    public ArrayList<lensAttribute> getTint() {
+    public ArrayList<LensAttribute> getTint() {
         return tint;
     }
 
-    public void setTint(ArrayList<lensAttribute> tint) {
+    public void setTint(ArrayList<LensAttribute> tint) {
         this.tint = tint;
     }
 
-    public ArrayList<lensAttribute> getMiscAttributes() {
+    public ArrayList<LensAttribute> getMiscAttributes() {
         return miscAttributes;
     }
 
-    public void setMiscAttributes(ArrayList<lensAttribute> miscAttributes) {
+    public void setMiscAttributes(ArrayList<LensAttribute> miscAttributes) {
         this.miscAttributes = miscAttributes;
     }
 
